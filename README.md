@@ -40,7 +40,7 @@ If you didn't bother with setting up your machine, you should use the `preview` 
 tns preview --bundle
 ```
 
-# Building movies list
+# PART 1: Building movies list
 1. Create new `Movie` class.
 ```
 ng generate class movie
@@ -67,3 +67,30 @@ Inject the `MovieService`.
 Fetch all movies and display them in the templates for web and mobile.
 > Notice that both service methods return `Observable`! You may need to use the [`async` pipe](https://angular.io/api/common/AsyncPipe).
 
+# PART 2: Building movie details
+
+1. Create new `MovieDetails` component
+```
+ng generate component movie-details
+```
+
+2. Register as route.
+
+Register the `MovieDetails` component as a route in `src/app/app.routes.ts`.
+Provide the movie ID as param.
+
+3. Navigate to `MovieDetails`.
+
+Go to the `MoviesListComponent` template.
+Add a button that navigates to the `MovieDetails` page on click/tap.
+> You should use the <router-link> and <ns-router-link> directives.
+
+4. Fetch the movie
+
+Go to the `MovieDetailsComponent` TS file again.
+Resolve the movie id from the `ActivatedRoute`. Fetch the movie from the `MovieService`.
+
+5. Display the movie
+
+Go to the template of the `MovieDetailsComponent`.
+You have the movie in your component class - now display it on the screen. Get creative!
