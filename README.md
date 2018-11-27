@@ -41,14 +41,14 @@ tns preview --bundle
 ```
 
 # Building movies list
-1. Create a `Movie` class.
+1. Create new `Movie` class.
 ```
 ng generate class movie
 ```
 
-The class should have `title` and `poster` properties of appropriate types.
+The `Movie` needs `title` and `poster` properties of appropriate types. Make sure to add them to the newly created class.
 
-1. Create a new `MovieService` for fetching the movies.
+1. Create new `MovieService` for fetching the movies.
 
 ```
 ng generate service movies
@@ -57,11 +57,13 @@ ng generate service movies
 Copy the mocked movies data from [movies.js](movies.js).
 Implement two methods in the service - `getAll(): Observable<Movie[]>` and `getById(id: number): Observable<Movie`. 
 
-1. Create a new component for the movies list.
+1. Create new `MoviesListComponent` component to display the information for all movies.
 
 ```
 ng generate component movies-list
 ```
+
 Inject the `MovieService`.
-Get all movies and display them in the templates for web and mobile.
+Fetch all movies and display them in the templates for web and mobile.
+> Notice that both service methods return `Observable`! You may need to use the [`async` pipe](https://angular.io/api/common/AsyncPipe).
 
