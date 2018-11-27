@@ -55,7 +55,7 @@ ng generate service movies
 ```
 
 Copy the mocked movies data from [movies.js](movies.js).
-Implement two methods in the service - `getAll(): Observable<Movie[]>` and `getById(id: number): Observable<Movie`. 
+Implement two methods in the service - `getAll(): Observable<Movie[]>` and `getByIndex(index: number): Observable<Movie`. 
 
 1. Create new `MoviesListComponent` component to display the information for all movies.
 
@@ -77,7 +77,7 @@ ng generate component movie-details
 2. Register as route.
 
 Register the `MovieDetails` component as a route in `src/app/app.routes.ts`.
-Provide the movie ID as param.
+Provide the index of the movie in the array as param.
 
 3. Navigate to `MovieDetails`.
 
@@ -88,7 +88,7 @@ Add a button that navigates to the `MovieDetails` page on click/tap.
 4. Fetch the movie
 
 Go to the `MovieDetailsComponent` TS file again.
-Resolve the movie id from the `ActivatedRoute`. Fetch the movie from the `MovieService`.
+Resolve the movie index from the `ActivatedRoute`. Fetch the movie from the `MovieService`.
 
 5. Display the movie
 
