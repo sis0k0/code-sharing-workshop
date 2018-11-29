@@ -1,3 +1,6 @@
+# Project
+You will be building a simple master-details application for the Star Wars movies. You can find the finished application here: https://github.com/sis0k0/ns-code-sharing-starwars.
+
 # Setup
 
 You need a few globally installed node packages.
