@@ -67,6 +67,12 @@ Inject the `MovieService`.
 Fetch all movies and display them in the templates for web and mobile.
 > Notice that both service methods return `Observable`! You may need to use the [`async` pipe](https://angular.io/api/common/AsyncPipe).
 
+1. Display the `MoviesListComponent`.
+
+Provide the `MoviesListComponent` as a route in `src/app/app.routes.ts`.
+Make the default `/` route redirect to the movies list route.
+> Hint: You have to change the first route in the `routes` array.
+
 # PART 2: Building movie details
 
 1. Create new `MovieDetails` component
