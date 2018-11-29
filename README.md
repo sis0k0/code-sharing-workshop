@@ -89,7 +89,7 @@ Provide the index of the movie in the array as param.
 
 Go to the `MoviesListComponent` template.
 Add a button that navigates to the `MovieDetails` page on click/tap.
-> You should use the <router-link> and <ns-router-link> directives.
+> You should use the \<router-link\> and \<ns-router-link\> directives.
 
 4. Fetch the movie
 
