@@ -80,23 +80,23 @@ Make the default `/` route redirect to the movies list route.
 ng generate component movie-details
 ```
 
-2. Register as route.
+1. Register as a route.
 
 Register the `MovieDetails` component as a route in `src/app/app.routes.ts`.
 Provide the index of the movie in the array as param.
 
-3. Navigate to `MovieDetails`.
+1. Navigate to `MovieDetails`.
 
 Go to the `MoviesListComponent` template.
 Add a button that navigates to the `MovieDetails` page on click/tap.
 > You should use the \<router-link\> and \<ns-router-link\> directives.
 
-4. Fetch the movie
+1. Fetch the movie
 
 Go to the `MovieDetailsComponent` TS file again.
 Resolve the movie index from the `ActivatedRoute`. Fetch the movie from the `MovieService`.
 
-5. Display the movie
+1. Display the movie
 
 Go to the template of the `MovieDetailsComponent`.
 You have the movie in your component class - now display it on the screen. Get creative!
